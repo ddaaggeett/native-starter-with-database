@@ -6,8 +6,13 @@ export function updateUserInst(newUserInst) {
         newUserInst
     }
 }
-export function localAction() {
+export function countUp() {
     return {
-        type: actions.LOCAL_ACTION,
+        type: actions.COUNT_UP,
+    }
+}
+export function countDown() {
+    return {
+        type: actions.COUNT_DOWN,
     }
 }

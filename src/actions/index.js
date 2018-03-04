@@ -1,5 +1,6 @@
 export const UPDATE_USER_INST = 'UPDATE_USER_INST'
-export const LOCAL_ACTION = 'LOCAL_ACTION'
+export const COUNT_UP = 'COUNT_UP'
+export const COUNT_DOWN = 'COUNT_DOWN'
 export const INSERT_OBJECT = 'INSERT_OBJECT'
 export const EDIT_OBJECT = 'EDIT_OBJECT'
 export const DELETE_OBJECT = 'DELETE_OBJECT'
