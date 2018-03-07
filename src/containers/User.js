@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 
 import User from '../components/User'
 
-import * as MainActions from '../actions/main'
+import * as actionCreators from '../actions/actionCreators'
 
 function mapStateToProps(state) {
 	return {
@@ -14,7 +14,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-	return bindActionCreators(Object.assign({}, MainActions), dispatch)
+	return bindActionCreators(Object.assign({}, actionCreators), dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(User)

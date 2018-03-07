@@ -2,14 +2,14 @@
 RethinkDB changefeed changefeedListeners
 handles redux action dispathes
 */
-import * as doctypes from '../db/doctypes'
 import * as actions from '../actions'
-import * as reduxActions from '../actions/main'
+import * as actionCreators from '../actions/actionCreators'
+
 import io from 'socket.io-client';
-const socket = io.connect('http://localhost:1234')
+const socket = io.connect('http://192.168.0.3:1234')
 
 function dispatchRedux(changefeedType, store, object) {
-    store.dispatch(reduxActions.updateUserInst(object))
+    store.dispatch(actionCreators.updateUserInst(object))
 }
 
 export default function(store) {

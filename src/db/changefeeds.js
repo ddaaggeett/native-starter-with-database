@@ -1,9 +1,9 @@
 /*
 RethinkDB changefeed logic
 */
-import * as actions from '../actions'
+var actions = require('../actions')
 
-export default function(socket) {
+const changefeeds = function(socket) {
 
 	return function(rows) {
 		rows.each(function(err, row) {
@@ -22,3 +22,7 @@ export default function(socket) {
 		});
 	};
 };
+
+module.exports = {
+	changefeeds
+}
