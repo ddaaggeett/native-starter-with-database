@@ -4,7 +4,7 @@ import * as actions from '../actions'
 import { styles } from '../styles'
 
 import io from 'socket.io-client';
-const socket = io.connect('http://192.168.0.3:1234')
+const socket = io.connect('http://192.168.0.3:3456')
 
 export default class Main extends Component {
     constructor(props) {

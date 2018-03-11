@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 import { StackNavigator } from 'react-navigation'
 import * as screens from './src/containers'
 import changefeedListeners from './src/db/changefeed-listeners'
-import configureStore from './src/config/store';
+import configureStore from './src/redux-config/store';
 const store = configureStore();
 
 changefeedListeners(store)
