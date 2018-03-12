@@ -10,7 +10,7 @@ var ioServer = app.listen(process.env.PORT || config.get('nativestarter.socketPo
     var port = ioServer.address().port;
     console.log('socket.io listening at http://' + host + ':' + port);
 });
-var io = require('socket.io')(ioServer);
+var io = require('socket.io')(ioServer, {pingTimeout: 1})
 
 r.connect({
     host: config.get('nativestarter.host'),
