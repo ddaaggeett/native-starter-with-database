@@ -1,4 +1,4 @@
-# native-starter-with-database
+# nativestarter-with-database
 
 in one terminal, run:
 

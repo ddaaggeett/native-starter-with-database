@@ -5,8 +5,8 @@ handles redux action dispathes
 import * as actions from '../actions'
 import * as actionCreators from '../actions/actionCreators'
 
-import io from 'socket.io-client';
-const socket = io.connect('http://192.168.0.3:1234')
+import io from 'socket.io-client/dist/socket.io'
+const socket = io.connect('http://192.168.0.3:3456')
 
 function dispatchRedux(changefeedType, store, object) {
     store.dispatch(actionCreators.updateUserInst(object))
