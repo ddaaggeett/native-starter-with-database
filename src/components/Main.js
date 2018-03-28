@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import * as actions from '../actions'
 import { styles } from '../styles'
 
-import io from 'socket.io-client';
+import io from 'socket.io-client/dist/socket.io'
 const socket = io.connect('http://192.168.0.3:3456')
 
 export default class Main extends Component {
