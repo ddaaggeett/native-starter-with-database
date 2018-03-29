@@ -21,6 +21,7 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "auth0-js": "^9.3.0",
     "concurrently": "^3.5.1",
     "config": "^1.30.0",
     "expo": "^25.0.0",
